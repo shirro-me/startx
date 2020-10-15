@@ -1,0 +1,339 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	padding: 0;
+	margin: 0;
+}
+
+
+/* css header */
+header {
+	position: fixed;
+	background-color:#ff0000;
+	height: 60px;
+	width: 100%;
+	top: 0;
+	display: flex;
+	align-items: center;
+	z-index: 2;
+	background-size: 200%;
+}
+
+/* css gambar */
+.header-logo{
+	margin-left: 80px;
+}
+
+.header-logo img{
+	width: 40px;
+	display: inline-block;
+}
+
+/* css gambar end */
+
+.header-list ul{
+	display: inline-flex;
+	align-items: center;
+}
+
+.header-list ul li{
+	margin-right: 10px;
+	list-style: none;
+}
+
+.header-list ul li a{
+	margin: 20px 15px;
+	text-decoration: none;
+	color: #ffffff;
+	font-weight: 600;
+	transition: 0.6s;
+}
+
+.header-list ul li a:active{
+	color: teal;
+}
+
+.header-list ul li a:hover{
+	color: #ff0000;	
+	background-color: #ffffff;
+	border-radius: 5px;
+	padding: 10px 10px;
+}
+
+/* css header end */
+/* main{
+	height: 800vh;
+} */
+
+
+.jumbotron{
+	background-image: url(assets/images/indonesia-map.png);
+	background-size: 100%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+.jumbotron-cover{
+	background-color: rgb(0, 0, 0, 0.6);
+}
+
+.jumbotron-container{
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.jumbotron-image img{
+	width: 60%;
+}
+
+.jumbotron-text{
+	margin-left: -180px;
+}
+
+.jumbotron-text .merah h1{
+	color: #ff0000;
+	font-size: 80px;
+}
+
+.jumbotron-text .putih h1{
+	color: #ffffff;
+	font-size: 80px;
+}
+
+/* bagian footer */
+
+footer{
+	position: fixed;
+	width: 100%;
+	height: 60px;
+	background-color: #ff0000;
+	bottom: 0;
+	text-align: center;
+	padding: 5px 0;
+}
+
+.footer-text{
+	color: #ffffff;
+	font-weight: 400;	
+}
+
+
+
+
+
+/* bagian content.html*/
+
+.banner {
+    display: flex;
+    margin-top: 80px;
+}
+.left-column, .right-column {
+    flex-basis: 50%;
+}
+.right-column img {
+    width: 80%;
+}
+.btn button {
+    padding: 10px 40px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    outline: none;
+    border: 2px solid #ff0000;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #fe9b2e;
+}
+.btn {
+    position: relative;
+    margin: 10px 15px;
+    align-items: center;
+    justify-content: center;
+}
+br {
+    display: block;
+    margin: 25px 0px;
+    line-height: 30px;
+}
+
+
+
+
+/* Content-sejarah.html */
+
+* {
+    box-sizing: border-box;
+}
+
+.main {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+li {
+    list-style: none;
+    padding: 10px 0px;
+    margin: 10px 0px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 20px;
+    color:yellow;
+}
+
+.content-heading {
+text-align: center;
+justify-content: center;
+}
+
+.content-history {
+    text-align: center;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 670px){
+    /* navbar mobile start */
+
+    header{
+        justify-content: space-between; 
+    }
+
+    .main {
+		margin-top: 80px;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+    .menu-toggle {
+        display: block;
+        margin-right: 30px;
+        font-size: 30px;
+        color: white;
+    }
+
+    header .header-list{
+        /* display: none; */
+        position: absolute;
+        width: 100%;
+        background: rgb(0, 0, 0, 0.8);
+        height: calc(100vh - 50px);
+        top: 60px;
+        transition: 0.5s;
+        left: 100%;
+    }
+    
+    header .header-list.active{
+        left: 0px;
+    }
+
+    header .header-list ul{
+        display: block;
+        text-align: center;
+    }
+
+    header .header-list ul li a{
+        font-size: 20px;
+        line-height: 45px;
+        border-bottom: 
+        1px solid rgba(0, 0, 0, .2);
+    }
+    /* navbar mobile end */
+
+    .header-logo img{
+        margin-left: -50px;
+    }
+    	li {
+		list-style: none;
+		padding: 5px 0px;
+		margin: 5px 0px;
+		margin-right: 20px;
+		padding-right: 5px;
+		font-family: 'Times New Roman', Times, serif;
+		font-style: italic;
+		font-size: 12px;
+		color:yellow;
+	}
+
+    .jumbotron{
+        background-position-y: 140px;
+        background-image: url(../assets/images/Garuda.png);
+        background-size: 100%;
+        background-image-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .jumbotron-cover{
+        background-color: rgb(0, 0, 0, 0.6);
+    	background-image-size: 100%;
+    }
+    
+    .jumbotron-image img{
+        display: none;
+        size: 100%;
+    }
+    
+    .jumbotron-text{
+        flex-direction: column;
+        display: flex;
+        margin-left: 1%;
+    }
+    
+    .jumbotron-text .merah h1{
+        color: #ff0000;
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .jumbotron-text .putih h1{
+        color: #ffffff;
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1000px){
+    /* css gambar */
+    .header-logo{
+        margin-left: 60px;
+    }
+
+    .header-logo img{
+        width: 40px;
+        display: inline-block;
+    }
+
+    /* css gambar end */
+    
+    .jumbotron-text .merah h1{
+        color: #ff0000;
+        font-size: 70px;
+        text-align: center;
+        margin-right: 20px;
+    }
+    
+    .jumbotron-text .putih h1{
+        color: #ffffff;
+        font-size: 70px;
+        text-align: center;
+        margin-right: 10px;
+    }
+    .menu-icon {
+    	float: right;
+    }
+    .header-list {
+    	float: right;
+    	margin-right:20px;
+    }
+}
+
+
+
+
+
+
+
